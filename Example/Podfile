@@ -1,12 +1,11 @@
 use_frameworks!
 
 target 'ZXBannerView_Example' do
-    pod 'ZXBannerView', :path => '../'
-    
-    target 'ZXBannerView_Tests' do
-        inherit! :search_paths
-        
-        
-    end
-end
+  pod 'ZXBannerView', :path => '../'
 
+  target 'ZXBannerView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
