@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZXBannerView'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ZXBannerView.'
+  s.version          = '0.1.1'
+  s.summary          = 'ZXBannerView can be compatible Rect or Masonry to implement layout layout.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,6 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Xie zexin' => '285644797@qq.com' }
+  # s.source           = { :git => 'https://github.com/xzx951753/ZXBannerView.git', :tag => '0.1.0' }
   s.source           = { :git => '/Users/xiezexin/Documents/GitHub/ZXBannerView', :tag => '0.1.0' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -35,8 +36,13 @@ TODO: Add long description of the pod here.
   # s.resource_bundles = {
   #   'ZXBannerView' => ['ZXBannerView/Assets/*.png']
   # }
+  
+  
   s.source_files = 'ZXBannerView/Classes/**/*'
   s.public_header_files = 'ZXBannerView/Classes/**/*.h'
+  
+  # s.source_files = 'https://github.com/xzx951753/ZXBannerView/Classes/**/*'
+  # s.public_header_files = 'https://github.com/xzx951753/ZXBannerView/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'SDWebImage', '~> 4.3.2'
   s.dependency 'Masonry', '~> 1.1.0'

@@ -1,7 +1,7 @@
 {
   "name": "ZXBannerView",
-  "version": "0.1.0",
-  "summary": "A short description of ZXBannerView.",
+  "version": "0.1.1",
+  "summary": "ZXBannerView can be compatible Rect or Masonry to implement layout layout.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/xzx951753/ZXBannerView",
   "license": {
@@ -12,15 +12,13 @@
     "Xie zexin": "285644797@qq.com"
   },
   "source": {
-    "git": "https://github.com/xzx951753/ZXBannerView.git",
+    "git": "/Users/xiezexin/Documents/GitHub/ZXBannerView",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "ZXBannerView/Classes/**/*",
-  "public_header_files": "ZXBannerView/Classes/**/*.h",
   "dependencies": {
     "SDWebImage": [
       "~> 4.3.2"

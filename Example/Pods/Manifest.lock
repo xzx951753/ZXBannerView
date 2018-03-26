@@ -3,7 +3,7 @@ PODS:
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
-  - ZXBannerView (0.1.0):
+  - ZXBannerView (0.1.1):
     - Masonry (~> 1.1.0)
     - SDWebImage (~> 4.3.2)
 
@@ -17,8 +17,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
-  ZXBannerView: b49780d8244616273e16983dc3dee7aeeea99163
+  ZXBannerView: f60c63372c13b55862961b3232842e64e10c2881
 
-PODFILE CHECKSUM: a9110c288a79d58f8e77c1dfd5e37f4cb6e4acf8
+PODFILE CHECKSUM: 0d9d8add399f256a570d0679f485d5b19166b158
 
 COCOAPODS: 1.4.0
