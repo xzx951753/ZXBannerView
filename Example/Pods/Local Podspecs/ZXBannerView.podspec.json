@@ -18,7 +18,12 @@
   "platforms": {
     "ios": "8.0"
   },
+<<<<<<< HEAD
   "requires_arc": true,
+=======
+  "source_files": "ZXBannerView/Classes/**/*",
+  "public_header_files": "ZXBannerView/Classes/**/*.h",
+>>>>>>> parent of d10b79b... pod update
   "dependencies": {
     "SDWebImage": [
       "~> 4.3.2"
