@@ -1,6 +1,6 @@
 {
   "name": "ZXBannerView",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A short description of ZXBannerView.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/xzx951753/ZXBannerView",
@@ -12,8 +12,8 @@
     "Xie zexin": "285644797@qq.com"
   },
   "source": {
-    "git": "/Users/xiezexin/Documents/GitHub/ZXBannerView",
-    "tag": "0.1.0"
+    "git": "https://github.com/xzx951753/ZXBannerView.git",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
