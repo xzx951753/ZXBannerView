@@ -19,8 +19,11 @@
     "ios": "8.0"
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   "requires_arc": true,
 =======
+=======
+>>>>>>> parent of d10b79b... pod update
   "source_files": "ZXBannerView/Classes/**/*",
   "public_header_files": "ZXBannerView/Classes/**/*.h",
 >>>>>>> parent of d10b79b... pod update
