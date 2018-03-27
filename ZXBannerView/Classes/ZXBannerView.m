@@ -22,6 +22,9 @@
 @property (nonatomic,strong) NSArray* datas;
 @property (nonatomic,strong) void(^touchBlock)(ZXBannerData* data);
 
+@property (nonatomic,assign) CGFloat rollInterval;
+@property (nonatomic,assign) CGFloat animateInterval;
+
 @end
 
 @implementation ZXBannerView
@@ -77,6 +80,26 @@
     [self reload];
 }
 
+- (void)setImagesWithBannerDatas:(nonnull NSArray*)datas
+                withRollInterval:(CGFloat)rollInterval
+             withAnimateInterval:(CGFloat)animateInterval
+      withPageIndicatorTintColor:(nonnull UIColor*)pageIndicatorTintColor   //pageController颜色
+withCurrentPageIndicatorTintColor:(nonnull UIColor*)currentPageIndicatorTintColor   //PageController选中的颜色
+                  withTouchBlock:(void(^_Nullable)(id _Nullable data))touchBlock{
+    _pageControl.pageIndicatorTintColor = pageIndicatorTintColor;
+    _pageControl.currentPageIndicatorTintColor = currentPageIndicatorTintColor;
+    [self setImagesWithBannerDatas:datas
+                  withRollInterval:rollInterval
+               withAnimateInterval:animateInterval
+                    withTouchBlock:touchBlock];
+}
+
+
+- (void)setImagesWithBannerDatas:(NSArray *)datas withRollInterval:(CGFloat)rollInterval withAnimateInterval:(CGFloat)animateInterval withTouchBlock:(void (^_Nullable)(id _Nullable))touchBlock{
+    _rollInterval = rollInterval;
+    _animateInterval = animateInterval;
+    [self setImagesWithBannerDatas:datas withTouchBlock:touchBlock];
+}
 
 - (void)setImagesWithBannerDatas:(nonnull NSArray*)datas withTouchBlock:(void(^_Nullable)(id _Nullable data))touchBlock;{
     _datas = datas;
@@ -135,7 +158,7 @@
 
 - (void)createTimer{
     if ( !_timer ){
-        NSTimer* timer = [NSTimer scheduledTimerWithTimeInterval:_rollInterval?_rollInterval:3 target:self selector:@selector(rolling) userInfo:nil repeats:YES ];
+        NSTimer* timer = [NSTimer scheduledTimerWithTimeInterval:_rollInterval?_rollInterval:MAXFLOAT target:self selector:@selector(rolling) userInfo:nil repeats:YES ];
         [[NSRunLoop currentRunLoop]addTimer:(_timer = timer) forMode:NSRunLoopCommonModes];
     }
 }
@@ -173,7 +196,7 @@
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     if ( _timer ){
-        [_timer setFireDate:[NSDate dateWithTimeIntervalSinceNow:_rollInterval?_rollInterval:2]];
+        [_timer setFireDate:[NSDate dateWithTimeIntervalSinceNow:_rollInterval?_rollInterval:MAXFLOAT]];
     }
     //图片的个数  1 2 3 4 5 6 7 8
     //真实的页码  0 1 2 3 4 5 6 7

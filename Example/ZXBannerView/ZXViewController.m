@@ -48,10 +48,12 @@
         [mutable addObject:data];
     }
     
-    bannerView.rollInterval = 5;
-    bannerView.animateInterval = 0.5;
-    
-    [bannerView setImagesWithBannerDatas:mutable withTouchBlock:^(id  _Nullable data) {
+    [bannerView setImagesWithBannerDatas:mutable
+                        withRollInterval:3
+                     withAnimateInterval:0.5
+              withPageIndicatorTintColor:[UIColor grayColor]
+       withCurrentPageIndicatorTintColor:[UIColor redColor]
+                          withTouchBlock:^(id  _Nullable data) {
         ZXBannerData* bannerData = (ZXBannerData*)data;
         NSLog(@"link=%@",bannerData.link);
     }];
