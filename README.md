@@ -1,7 +1,10 @@
 # ZXBannerView
 ZXBannerView is a cycle banner view. You can create object by initWithFrame or direct init after then masonry make layouts. ZXBannerView use block method handle touch event, but you need confirm image and link arrays was corrected,  They were encapsulation in 'ZXBannerData' classes.
 
-## Example
+# IntroduceAnimation
+![IntroduceAnimation](https://raw.githubusercontent.com/xzx951753/ZXBannerView/71d9f133f4248ec23ef2330de4cb50c04369520d/IntroduceAnimation.gif "IntroduceAnimation")
+
+# Example
 ```Objective-C
 - (void)viewDidLoad
 {
