@@ -254,6 +254,9 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Xie zexin";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = PFJC4KV347;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -563,6 +566,7 @@
 			baseConfigurationReference = B4DC916013C2B1D5DC9EC497 /* Pods-ZXBannerView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PFJC4KV347;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZXBannerView/ZXBannerView-Prefix.pch";
 				INFOPLIST_FILE = "ZXBannerView/ZXBannerView-Info.plist";
@@ -578,6 +582,7 @@
 			baseConfigurationReference = 393A5AAACA537CCF07F3BD8F /* Pods-ZXBannerView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PFJC4KV347;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZXBannerView/ZXBannerView-Prefix.pch";
 				INFOPLIST_FILE = "ZXBannerView/ZXBannerView-Info.plist";

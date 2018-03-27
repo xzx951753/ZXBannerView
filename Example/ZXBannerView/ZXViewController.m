@@ -13,6 +13,8 @@
 
 @interface ZXViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+
 @end
 
 @implementation ZXViewController
@@ -38,7 +40,7 @@
                       ];
     
     //It sort relative to images array, Through it to tell us you touched which image.
-    NSArray* links = @[@"link1",@"link2",@"link3",@"link4"];
+    NSArray* links = @[@"touching 1",@"touching 2",@"touching 3",@"touching 4"];
     
     NSMutableArray* mutable = [NSMutableArray array];
     for ( NSInteger count = 0 ; count < urls.count ; count++){
@@ -53,9 +55,10 @@
                      withAnimateInterval:0.5
               withPageIndicatorTintColor:[UIColor grayColor]
        withCurrentPageIndicatorTintColor:[UIColor redColor]
-                          withTouchBlock:^(id  _Nullable data) {
+                          withTouchBlock:^(id _Nullable data) {
         ZXBannerData* bannerData = (ZXBannerData*)data;
-        NSLog(@"link=%@",bannerData.link);
+        _textView.text = [NSString stringWithFormat:@"%@\n%@",_textView.text,bannerData.link];
+        [_textView scrollRangeToVisible:NSMakeRange(_textView.text.length, 1)];
     }];
     
 }

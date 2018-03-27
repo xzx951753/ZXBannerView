@@ -20,8 +20,26 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hb6-lt-QwI">
+                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="6Dr-yd-PyU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hb6-lt-QwI" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="22X-po-jge"/>
+                            <constraint firstAttribute="trailing" secondItem="Hb6-lt-QwI" secondAttribute="trailing" id="J5A-6f-Khi"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="Hb6-lt-QwI" secondAttribute="bottom" id="MIU-ja-GLS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="Hb6-lt-QwI" id="Nwh-D1-oSo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
