@@ -1,6 +1,0 @@
-framework module ZXBannerView {
-  umbrella header "ZXBannerView.h"
-
-  export *
-  module * { export * }
-}
