@@ -46,10 +46,6 @@ ZXBannerView is a cycle banner view. You can create object by initWithFrame or d
     
 }
 ```
-## Requirements
-Dependency Library
-    'SDWebImage', '~> 4.3.2'
-    'Masonry', '~> 1.1.0'
 
 ## Installation
 
