@@ -1,9 +1,6 @@
 # ZXBannerView
-
-[![CI Status](http://img.shields.io/travis/Xie zexin/ZXBannerView.svg?style=flat)](https://travis-ci.org/Xie zexin/ZXBannerView)
-[![Version](https://img.shields.io/cocoapods/v/ZXBannerView.svg?style=flat)](http://cocoapods.org/pods/ZXBannerView)
-[![License](https://img.shields.io/cocoapods/l/ZXBannerView.svg?style=flat)](http://cocoapods.org/pods/ZXBannerView)
-[![Platform](https://img.shields.io/cocoapods/p/ZXBannerView.svg?style=flat)](http://cocoapods.org/pods/ZXBannerView)
+===========================
+ZXBannerView is a cycle banner view. You can create object by initWithFrame or direct init after then masonry make layouts. ZXBannerView use block method handle touch event, but you need confirm image and link arrays was corrected,  They were encapsulation in 'ZXBannerData' classes.
 
 ## Example
 
