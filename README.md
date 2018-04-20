@@ -1,10 +1,14 @@
 # ZXBannerView
-ZXBannerView is a cycle banner view. You can create object by initWithFrame or direct init after then masonry make layouts. ZXBannerView use block method handle touch event, but you need confirm image and link arrays was corrected,  They were encapsulation in 'ZXBannerData' classes.
+1. 一个无限循环的bannerView，可以使用initWithFrame创建，也可以使用init创建后再使用Masonry进行约束。
+2. 使用block方式处理banner图点击事件，可自定义传入block的参数。（修改ZXBannerData）
+3. 需要注意的是传入的图片url和link的个数必须相等。
+4. 支持横竖屏
 
-# IntroduceAnimation
+
+# 示例动画
 ![IntroduceAnimation](https://raw.githubusercontent.com/xzx951753/ZXBannerView/71d9f133f4248ec23ef2330de4cb50c04369520d/IntroduceAnimation.gif "IntroduceAnimation")
 
-# Example
+# 示例代码
 ```Objective-C
 - (void)viewDidLoad
 {
@@ -49,17 +53,16 @@ ZXBannerView is a cycle banner view. You can create object by initWithFrame or d
 }
 ```
 
-## Installation
+## 安装
 
-ZXBannerView is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+已上传到trunk，可使用pod安装
 
 ```ruby
 pod 'ZXBannerView'
 ```
 
 ## Author
-
+如有发现问题，欢迎提交给我!!
 Xie zexin, 285644797@qq.com
 
 ## License
